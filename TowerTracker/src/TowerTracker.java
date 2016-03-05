@@ -63,7 +63,7 @@ public class TowerTracker {
 	public static final double CAMERA_ANGLE = 17.5;
 	
 //  shooter settings
-	public static final double SHOOTER_SPEED = 20.806;//launch speed
+	public static final double SHOOTER_SPEED = 30.806;//launch speed
 	public static final double OFFSET_TO_FRONT = 0;
 	
 	public static boolean shouldRun = true;
@@ -171,7 +171,7 @@ public class TowerTracker {
 				double[] radians = quad(
 						/*term a*/	(-0.003165*Math.pow(beta, 2))/(Math.pow(alpha, 2)),		
 						/*term b*/	(beta/39.37),		
-						/*term c*/	(-(2.438+((0.003165*Math.pow(beta, 2))/(Math.pow(alpha, 2)))))
+						/*term c*/	(-(2.0+((0.003165*Math.pow(beta, 2))/(Math.pow(alpha, 2)))))
 									);
 				double radian1 = radians[0];
 
